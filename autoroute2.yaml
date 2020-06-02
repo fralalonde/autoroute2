@@ -1,0 +1,33 @@
+# Sample config file. Edit this to suit your usage.
+devices:
+  - port-name: Pyramid MIDI USB MIDI 1
+    alias: Pyramid
+    roles:
+      # sends to everyone
+      - Broadcast
+      # receives from everyone
+      - Monitor
+  - port-name: GS-10 MIDI
+    # default is duplex
+    port-dir: Input
+    alias: OctaSeq
+    roles:
+      - Broadcast
+  - port-name: BCF2000 MIDI 1
+    alias: BCF2000
+  - port-name: Arturia BeatStep MIDI 1
+    alias: BeatStep
+    roles:
+      - Broadcast
+  - port-name: RD-8 MIDI 1
+    alias: RD-8
+  - port-name: USB Uno MIDI Interface MIDI 1
+    alias: "Micro Q"
+  - port-name: Neutron(1) MIDI 1
+    alias: Neutron
+  - port-name: USB Uno MIDI Interface MIDI 1
+    alias: Sub37
+  - port-name: MicroBrute MIDI 2
+    ignore: true
+  - port-name: Midi Through Port-0
+    ignore: true
